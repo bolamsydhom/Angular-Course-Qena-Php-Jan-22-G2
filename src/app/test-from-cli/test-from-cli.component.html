@@ -1,0 +1,49 @@
+<h1>{{title}}</h1>
+
+<h3>Hello {{personName}}</h3>
+<!-- String Interpolation -->
+
+
+<!-- Property Binding -->
+<img [src]="imgSrc" alt="" srcset="">
+<p [innerText]="title"></p>
+
+<img [attr.Src]="imgSrc" alt="">
+<input placeholder="hamada" [type]="showPassword ? 'text' : 'password'" />
+<p class="test" [class.test3]="showPassword" [class]="showPassword ? 'test2' : '' "
+    [ngClass]="{'password-show': showPassword}" (click)="showPassword = !showPassword">show password</p>
+
+<p [ngStyle]="{'fontSize.px': 45}">hello</p>
+
+<p [class]="class">Hello</p>
+<div [style]="'background: url('+imgSrc+'); width: 40px; height: 40px'"></div>
+
+
+<!-- 
+    switch(x)
+    case 4:
+        log(4);
+ -->
+
+
+<div [ngSwitch]="number">
+    <h1 *ngSwitchCase="1">This is h1</h1>
+    <h2 *ngSwitchCase="2">This is h2</h2>
+    <p *ngSwitchDefault>This is default</p>
+</div>
+
+<h1 *ngIf="showPassword; else templateEx">Show Password True</h1>
+
+<ng-template #templateEx>
+    <h1> Show Password False</h1>
+</ng-template>
+
+
+
+
+-----------------------------------------------
+<input #inputEl type="text" name="" id="1" value="hamada" class="input-form test test3">
+<input #inputEl type="text" name="" id="2" value="hamada2" class="input-form test test3">
+<input #inputEl type="text" name="" id="3" value="hamada3" class="input-form test test3">
+
+<button (click)="testButton(inputEl)">b</button>
