@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Product } from './_models/product/product.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-course-project';
+  addedProduct: Product[] = [];
+ 
+
+  onItemAdded(product: Product){
+    console.log(product);
+    this.addedProduct.push(product);
+  }
 }

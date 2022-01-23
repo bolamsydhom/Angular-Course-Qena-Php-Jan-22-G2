@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
-<app-product-listing></app-product-listing>
+<app-navbar [addedProducts]="addedProduct"></app-navbar>
+<app-product-listing (itemAdded)="onItemAdded($event)"></app-product-listing>
 
 <!-- <app-test-from-cli></app-test-from-cli> -->

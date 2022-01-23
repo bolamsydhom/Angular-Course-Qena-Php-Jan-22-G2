@@ -10,6 +10,7 @@ import { ProductItemComponent } from './core/product-feature/product-item/produc
 import { ProductListingComponent } from './core/product-feature/product-listing/product-listing.component';
 import { ProductFilterComponent } from './core/product-feature/product-filter/product-filter.component';
 import { CustomeDirectveDirective } from './shared/custome-directve.directive';
+import { DropDownComponent } from './shared/drop-down/drop-down.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CustomeDirectveDirective } from './shared/custome-directve.directive';
     ProductItemComponent,
     ProductListingComponent,
     ProductFilterComponent,
-    CustomeDirectveDirective
+    CustomeDirectveDirective,
+    DropDownComponent
   ],
   imports: [
     BrowserModule,
