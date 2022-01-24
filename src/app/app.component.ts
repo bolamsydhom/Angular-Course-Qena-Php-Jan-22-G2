@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Product } from './_models/product/product.model';
+import { Product, ProductWithCounter } from './_models/product/product.model';
 
 @Component({
   selector: 'app-root',
@@ -8,11 +8,13 @@ import { Product } from './_models/product/product.model';
 })
 export class AppComponent {
   title = 'angular-course-project';
-  addedProduct: Product[] = [];
+  // addedProduct: ProductWithCounter[] = [];
  
 
-  onItemAdded(product: Product){
-    console.log(product);
-    this.addedProduct.push(product);
-  }
+  // onItemAdded(product: Product){
+  //   console.log(product);
+  //   // some logic to check duplication
+  //   const newProduct: ProductWithCounter = {...product, cartCounter: 1};
+  //   this.addedProduct.push(newProduct);
+  // }
 }

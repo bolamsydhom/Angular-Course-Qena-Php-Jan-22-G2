@@ -11,6 +11,10 @@ import { ProductListingComponent } from './core/product-feature/product-listing/
 import { ProductFilterComponent } from './core/product-feature/product-filter/product-filter.component';
 import { CustomeDirectveDirective } from './shared/custome-directve.directive';
 import { DropDownComponent } from './shared/drop-down/drop-down.component';
+import { ProductDetailsComponent } from './core/product-feature/product-details/product-details.component';
+import { ProductFormComponent } from './core/product-feature/product-form/product-form.component';
+import { NotFoundComponent } from './shared/not-found/not-found.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,11 +26,15 @@ import { DropDownComponent } from './shared/drop-down/drop-down.component';
     ProductListingComponent,
     ProductFilterComponent,
     CustomeDirectveDirective,
-    DropDownComponent
+    DropDownComponent,
+    ProductDetailsComponent,
+    ProductFormComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
